@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./transform.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>名前変換</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>名前変換</h1>
+      <div>
+        日本人の名前をアメリカ人の名前に、アメリカ人の名前を日本人の名前に変換します。
+        名字、名前ともに100位までのものを照らし合わせています。
+      </div>
+      <div>
+        <h3>日本人→アメリカ人</h3>
+        名字
+        <input type="text" name="jpnlastname" />
+        名前
+        <input type="text" name="jpnfirstname" />
+        男性
+        <input type="radio" name="sex" value="male" checked="checked" />
+        女性
+        <input type="radio" name="sex" value="female">
+        <button class="ok" type="button">
+          OK
+        </button> 
+        <p class="bot"></p>
+      </div>
+
+
+      <div>
+        <h3>アメリカ人→日本人</h3>
+        名字
+        <input type="text" name="usalastname" />
+        名前
+        <input type="text" name="usafirstname" />
+        男性
+        <input type="radio" name="sex2" value="male" checked="checked" />
+        女性
+        <input type="radio" name="sex2" value="female" />
+        <button class="ok2" type="button">
+          OK
+        </button> 
+      </div>
+      <p class="bot2">
+        
+      </p>
+    </div>
+  </body>
+</html>
